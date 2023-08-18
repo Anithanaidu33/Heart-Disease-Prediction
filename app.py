@@ -4,7 +4,7 @@ pick_out=open('hdpp.pkl','wb')
 pickle.dump(model,pick_out)
 pick_out.close()
 pick_in=open('hdpp.pkl','rb')
-m= pickle.load(pick_in)
+clf= pickle.load(pick_in)
 
 html_temp = """ 
     <div style ="background-color:pink;padding:13px"> 
