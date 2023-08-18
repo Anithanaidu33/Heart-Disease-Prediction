@@ -1,9 +1,9 @@
 import pickle
 import streamlit as st
-pick_out=open('HDP.pkl','wb')
+pick_out=open('hdpp.pkl','wb')
 pickle.dump(model,pick_out)
 pick_out.close()
-pick_in=open('HDP.pkl','rb')
+pick_in=open('hdpp.pkl','rb')
 m= pickle.load(pick_in)
 
 html_temp = """ 
@@ -27,12 +27,21 @@ std=st.number_input('ST depression',step=1.,format="%.2f")
 st=st.number_input('Slope of ST')
 nvf=st.number_input('Number of vessels fluro')
 th=st.number_input('Thallium')
-pred=predict(age,sex,cpt,bp,cl,fbs,ekg,hr,ea,std,st,nvf,th)
+result=''
 
-if st.button("Predict"):
-    if pred[0]==0:
-        st.error('Warning! You have high risk of getting a heart attack!')
+    if st.button('PREDICT'):
+        result=prediction(age,sex,cpt,bp,cl,fbs,ekg,hr,ea,std,st,nvf,th)
+        st.success('RISK IS {}'.format(result))
+
+def prediction(age,sex,cpt,bp,cl,fbs,ekg,hr,ea,std,st,nvf,th):
+    s=clf.predict([[age,sex,cpt,bp,cl,fbs,ekg,hr,ea,std,st,nvf,th]])
+    if s==1:
+        p='HIGH'
     else:
-         st.success('You have lower risk of getting a heart disease!')
+        p='LOW'
+    return p
+
+if __name__=='__main__':
+    main()
         
 
