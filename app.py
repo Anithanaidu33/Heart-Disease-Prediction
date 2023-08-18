@@ -28,10 +28,9 @@ st=st.number_input('Slope of ST')
 nvf=st.number_input('Number of vessels fluro')
 th=st.number_input('Thallium')
 result=''
-
-    if st.button('PREDICT'):
-        result=prediction(age,sex,cpt,bp,cl,fbs,ekg,hr,ea,std,st,nvf,th)
-        st.success('RISK IS {}'.format(result))
+if st.button('PREDICT'):
+    result=prediction(age,sex,cpt,bp,cl,fbs,ekg,hr,ea,std,st,nvf,th)
+    st.success('RISK IS {}'.format(result))
 
 def prediction(age,sex,cpt,bp,cl,fbs,ekg,hr,ea,std,st,nvf,th):
     s=clf.predict([[age,sex,cpt,bp,cl,fbs,ekg,hr,ea,std,st,nvf,th]])
