@@ -1,0 +1,9 @@
+€•$      Œsklearn.linear_model._logistic”ŒLogisticRegression”“”)”}”(Œ penalty”Œl2”Œdual”‰Œtol”G?6âëC-ŒC”G?ð      Œ
+fit_intercept”ˆŒintercept_scaling”KŒclass_weight”NŒrandom_state”NŒsolver”Œlbfgs”Œmax_iter”KdŒmulti_class”Œauto”Œ verbose”K Œ
+warm_start”‰Œn_jobs”NŒl1_ratio”NŒfeature_names_in_”Œnumpy.core.multiarray”Œ_reconstruct”“”Œnumpy”Œ ndarray”“”K …”Cb”‡”R”(KK
+…”hŒdtype”“”ŒO8”‰ˆ‡”R”(KŒ|”NNNJÿÿÿÿJÿÿÿÿK?t”b‰]”(ŒAge”ŒSex”ŒChest pain type”ŒBP”ŒCholesterol”ŒFBS over 120”ŒEKG results”ŒMax HR”ŒExercise angina”Œ
+ST depression”ŒSlope of ST”ŒNumber of vessels fluro”ŒThallium”et”bŒn_features_in_”K
+Œclasses_”hhK …”h‡”R”(KK…”h$Œi8”‰ˆ‡”R”(KŒ<”NNNJÿÿÿÿJÿÿÿÿK t”b‰C               ”t”bŒ n_iter_”hhK …”h‡”R”(KK…”h$Œi4”‰ˆ‡”R”(KhBNNNJÿÿÿÿJÿÿÿÿK t”b‰Cd   ”t”bŒcoef_”hhK …”h‡”R”(KKK
+†”h$Œf8”‰ˆ‡”R”(KhBNNNJÿÿÿÿJÿÿÿÿK t”b‰Ch¶’¤í¡g®¿Z1³W ç?¸é
+‹¦´â?|ËÁý™¼Ž?Ëïæ§ý~?9²Vß¿ fš—%È?ÕN3Å¥¿W´BýæÚà?Æj÷ïÅøÙ?z?» ¡?>Ôçl­«õ? [,.Ù?”t”bŒ
+intercept_”hhK …”h‡”R”(KK…”hX‰C—6¹œö´¿”t”bŒ_sklearn_version”Œ1.3.0”ub.
